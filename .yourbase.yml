@@ -7,7 +7,7 @@ build_targets:
     commands:
       - gem install bundler -v 1.8
       - bundle install
-      - bundle exec rake test
+      - bundle exec rspec
 
 ci:
   builds:
