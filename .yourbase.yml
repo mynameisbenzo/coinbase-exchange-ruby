@@ -5,15 +5,11 @@ dependencies:
 build_targets:
   - name: default
     commands:
-      - gem install bundler -v 1.8
+      - gem install bundler
       - bundle install
-      - rspec
-
+      - bundle exec rake test
 
 ci:
   builds:
-    - name: tests
+    - name: default
       build_target: default
-
-#test commit
-
